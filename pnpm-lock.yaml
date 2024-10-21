@@ -1,0 +1,131 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      sst:
+        specifier: ^3.2.40
+        version: 3.2.40
+
+packages:
+
+  aws4fetch@1.0.20:
+    resolution: {integrity: sha512-/djoAN709iY65ETD6LKCtyyEI04XIBP5xVvfmNxsEP0uJB5tyaGBztSryRr4HqMStr9R06PisQE7m9zDTXKu6g==}
+
+  jose@4.15.9:
+    resolution: {integrity: sha512-1vUQX+IdDMVPj4k8kOxgUqlcK518yluMuGZwqlr44FS1ppZB/5GWh4rZG89erpOBOJjU/OBsnCVFfapsRz6nEA==}
+
+  jose@5.2.3:
+    resolution: {integrity: sha512-KUXdbctm1uHVL8BYhnyHkgp3zDX5KW8ZhAKVFEfUbU2P8Alpzjb+48hHvjOdQIyPshoblhzsuqOwEEAbtHVirA==}
+
+  lru-cache@6.0.0:
+    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
+    engines: {node: '>=10'}
+
+  object-hash@2.2.0:
+    resolution: {integrity: sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==}
+    engines: {node: '>= 6'}
+
+  oidc-token-hash@5.0.3:
+    resolution: {integrity: sha512-IF4PcGgzAr6XXSff26Sk/+P4KZFJVuHAJZj3wgO3vX2bMdNVp/QXTP3P7CEm9V1IdG8lDLY3HhiqpsE/nOwpPw==}
+    engines: {node: ^10.13.0 || >=12.0.0}
+
+  openid-client@5.6.4:
+    resolution: {integrity: sha512-T1h3B10BRPKfcObdBklX639tVz+xh34O7GjofqrqiAQdm7eHsQ00ih18x6wuJ/E6FxdtS2u3FmUGPDeEcMwzNA==}
+
+  sst-darwin-arm64@3.2.40:
+    resolution: {integrity: sha512-m7xrx5m4cryYQ83gL8G9ewJEv29MSy6jVRY0sQPENOjZQxVPUc+gz5wy1bUnOdr+3FjuHgKpK8RqM5xnA+tD4Q==}
+    cpu: [arm64]
+    os: [darwin]
+
+  sst-darwin-x64@3.2.40:
+    resolution: {integrity: sha512-Vfe78j9nLGMh4q3qwpx9cMhdjSHkGkYH9NEF7SKxNbexKlEJybeeAfMzWlHd/cYPakNnaHjJ3LaHZ1ZtJsycGw==}
+    cpu: [x64]
+    os: [darwin]
+
+  sst-linux-arm64@3.2.40:
+    resolution: {integrity: sha512-ZH9rP6ys8SIyx7244PpNhr+T/QkYVXmfessIHZQcUQqvZ0gmv74NH3shMkaC6J3GwVSFvHzMplmrKVgox80LGw==}
+    cpu: [arm64]
+    os: [linux]
+
+  sst-linux-x64@3.2.40:
+    resolution: {integrity: sha512-oWaKyrBsRtj3su+Xuqg8e7ABDAOvM0oU+D3GPijkcdCKCkk8BK+DrMrKgw+SyUy1J29QfWpVWGP9S/Heyfwt2g==}
+    cpu: [x64]
+    os: [linux]
+
+  sst-linux-x86@3.2.40:
+    resolution: {integrity: sha512-of1FJYSk01mi3OPedcX/9NPIETCBcXWzcvYZhMlxtYTtYIe7OdufKgsBz+mV8V37npJZ2UGg/0Xa6D34zUMgRQ==}
+    cpu: [x86]
+    os: [linux]
+
+  sst@3.2.40:
+    resolution: {integrity: sha512-+X91Xh/NhVVbFR8d/pcFK7Rancs+//CbYNVXkrYh4aSCHwXYdui3InqTW7NuiqfzsRyvbxYFYvN0ZSTzD8WtXA==}
+    hasBin: true
+    peerDependencies:
+      hono: 4.x
+      valibot: 0.30.x
+    peerDependenciesMeta:
+      hono:
+        optional: true
+      valibot:
+        optional: true
+
+  yallist@4.0.0:
+    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+
+snapshots:
+
+  aws4fetch@1.0.20: {}
+
+  jose@4.15.9: {}
+
+  jose@5.2.3: {}
+
+  lru-cache@6.0.0:
+    dependencies:
+      yallist: 4.0.0
+
+  object-hash@2.2.0: {}
+
+  oidc-token-hash@5.0.3: {}
+
+  openid-client@5.6.4:
+    dependencies:
+      jose: 4.15.9
+      lru-cache: 6.0.0
+      object-hash: 2.2.0
+      oidc-token-hash: 5.0.3
+
+  sst-darwin-arm64@3.2.40:
+    optional: true
+
+  sst-darwin-x64@3.2.40:
+    optional: true
+
+  sst-linux-arm64@3.2.40:
+    optional: true
+
+  sst-linux-x64@3.2.40:
+    optional: true
+
+  sst-linux-x86@3.2.40:
+    optional: true
+
+  sst@3.2.40:
+    dependencies:
+      aws4fetch: 1.0.20
+      jose: 5.2.3
+      openid-client: 5.6.4
+    optionalDependencies:
+      sst-darwin-arm64: 3.2.40
+      sst-darwin-x64: 3.2.40
+      sst-linux-arm64: 3.2.40
+      sst-linux-x64: 3.2.40
+      sst-linux-x86: 3.2.40
+
+  yallist@4.0.0: {}
